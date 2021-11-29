@@ -1,5 +1,9 @@
 FROM node:14-alpine
 WORKDIR "/app"
+ENV PGHOST="db"
+ENV PGPASSWORD='example'
+ENV PGUSER='postgres'
+ENV PGPORT='5432'
 COPY ./package.json ./
 RUN npm install
 COPY . .

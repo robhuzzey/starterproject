@@ -6,8 +6,9 @@ function App() {
   const [data, setData] = useState('');
   useEffect(() => {
     const getData = async () => {
-      const f = await fetch('/api/data');
+      const f = await fetch('/api/api/1');
       const data = await f.json();
+      console.log("XXX", data);
       setData(data);
     }
     getData();
