@@ -17,7 +17,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Response from api:
+          Response from api x:
           <div><code>{JSON.stringify({ data }, true, 2)}</code></div>
         </p>
         <a
